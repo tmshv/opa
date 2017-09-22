@@ -1,0 +1,21 @@
+.opa {
+    --time: 300ms;
+    --ease: ease-out;
+
+    transition: opacity var(--time) var(--ease), transform var(--time) var(--ease);
+    transform: scale(.95);
+    opacity: 0;
+}
+
+.opa--visible {
+    opacity: 1;
+    transform: scale(1) rotateX(0);
+}
+
+figure {
+    width: 100px;
+}
+
+figure img{
+    width: 100%;
+}
